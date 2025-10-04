@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wvejt2smmgc7"
-path="res://.godot/imported/WoodFloor067B_1K-JPG_AmbientOcclusion.jpg-27628178ac4f06e688a4540868fa7ac4.ctex"
+uid="uid://b882msjs5nlxr"
+path="res://.godot/imported/Leather030_1K-JPG_Roughness.jpg-0b1e5a59bf6c6eb03ed2327c621fe4f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://room assets/WoodFloor067B_1K-JPG/WoodFloor067B_1K-JPG_AmbientOcclusion.jpg"
-dest_files=["res://.godot/imported/WoodFloor067B_1K-JPG_AmbientOcclusion.jpg-27628178ac4f06e688a4540868fa7ac4.ctex"]
+source_file="res://assets/Leather030_1K-JPG/Leather030_1K-JPG_Roughness.jpg"
+dest_files=["res://.godot/imported/Leather030_1K-JPG_Roughness.jpg-0b1e5a59bf6c6eb03ed2327c621fe4f0.ctex"]
 
 [params]
 

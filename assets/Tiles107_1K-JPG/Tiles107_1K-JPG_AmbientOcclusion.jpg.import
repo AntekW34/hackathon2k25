@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dekc4mo8ixt63"
-path.s3tc="res://.godot/imported/WoodFloor067B_1K-JPG_Roughness.jpg-f0b0a5af8ce558a5ae790d3ed537b273.s3tc.ctex"
+uid="uid://brspw5k4bpond"
+path.s3tc="res://.godot/imported/Tiles107_1K-JPG_AmbientOcclusion.jpg-5a168c621ac465f09655183f35f3c2b8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://room assets/WoodFloor067B_1K-JPG/WoodFloor067B_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/WoodFloor067B_1K-JPG_Roughness.jpg-f0b0a5af8ce558a5ae790d3ed537b273.s3tc.ctex"]
+source_file="res://assets/Tiles107_1K-JPG/Tiles107_1K-JPG_AmbientOcclusion.jpg"
+dest_files=["res://.godot/imported/Tiles107_1K-JPG_AmbientOcclusion.jpg-5a168c621ac465f09655183f35f3c2b8.s3tc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gu0fil8acb7p"
-path="res://.godot/imported/Tiles107.png-ca421dc4083adcd6efeebc071fef7b13.ctex"
+uid="uid://c8lycxbptgvku"
+path="res://.godot/imported/Leather030_1K-JPG_Color.jpg-02644879cde8e7c2797d9527ab53f537.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://room assets/Tiles107_1K-JPG/Tiles107.png"
-dest_files=["res://.godot/imported/Tiles107.png-ca421dc4083adcd6efeebc071fef7b13.ctex"]
+source_file="res://assets/Leather030_1K-JPG/Leather030_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/Leather030_1K-JPG_Color.jpg-02644879cde8e7c2797d9527ab53f537.ctex"]
 
 [params]
 
