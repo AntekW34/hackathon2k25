@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cmsei1ulpnh8f"]
+[gd_scene load_steps=17 format=3 uid="uid://cmsei1ulpnh8f"]
 
 [ext_resource type="Texture2D" uid="uid://douke64tq6jul" path="res://room assets/Tiles107_1K-JPG/Tiles107_1K-JPG_Color.jpg" id="1_jn645"]
 [ext_resource type="Texture2D" uid="uid://cykocjjwlm4ow" path="res://room assets/Tiles107_1K-JPG/Tiles107_1K-JPG_NormalGL.jpg" id="2_qvc4m"]
@@ -27,12 +27,23 @@ normal_texture = ExtResource("5_qtoah")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_jn645"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_qvc4m"]
-size = Vector3(1, 0.1, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jn645"]
+albedo_color = Color(1, 1, 1, 0)
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_qvc4m"]
+radius = 0.05
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dqbv"]
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_7dqbv"]
+size = Vector3(0.245, 0.095, 1.29)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ybpoa"]
+albedo_color = Color(0.46618086, 0.4661808, 0.4661808, 1)
+metallic = 1.0
+metallic_specular = 0.0
 
 [node name="room" type="Node3D"]
 
@@ -63,11 +74,18 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3j2fx")
 [node name="ceiling" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0, 2, 0)
 mesh = SubResource("PlaneMesh_jn645")
+surface_material_override/0 = SubResource("StandardMaterial3D_jn645")
 
 [node name="lamp" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9469523, -0.04349351)
-mesh = SubResource("BoxMesh_qvc4m")
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 1.8833966, -0.04349351)
+mesh = SubResource("TubeTrailMesh_qvc4m")
 surface_material_override/0 = SubResource("StandardMaterial3D_7dqbv")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="lamp"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.76384354, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07153201, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="lamp"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.04349351, 0.03761697)
+mesh = SubResource("PrismMesh_7dqbv")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ybpoa")
